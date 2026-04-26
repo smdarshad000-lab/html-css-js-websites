@@ -1,0 +1,19 @@
+{
+  "name": "todo-app-backend",
+  "version": "1.0.2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start3": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "express": "^5.2.1",
+    "ffs": "^0.1.2",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sendRequest(){
+            const a = document.getElementByID("a").value;
+            const b = ducumnet.getElementById("b").value;
+            const responce = await axios.post("hhtp://localhost:3000/sum",{
+                a: a,
+                b: b
+            })
+            console.log(response.data);
+        }
+    </script>
+</head>
+<body>
+    <input id = "a" type="text" placeholder="first value"></input>
+    <input id = "b" type="text" placeholder="second value"></input>
+
+    <button onclick ="sendRequest()">Find sum </button>
+</body>
+</html>
