@@ -1,4 +1,5 @@
-export default function Account(){
-    return
-    <div> Account Page </div>
+function Account() {
+  return <h1>Account Page</h1>;
 }
+
+export default Account;
