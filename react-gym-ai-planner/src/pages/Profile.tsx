@@ -1,19 +1,17 @@
+import { Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-export default function profile() {
-    const { user, isLoading } = useAuth();
-    const plan = false;
+export default function Profile() {
+  const { user, isLoading } = useAuth();
+  const plan = false;
 
-        if (!user && !isLoading) {
-      return <Navigate to="/auth/sign-in" replace />
-    }
-        if (!plan) {
-     return <Navigate to="/onboarding" replace />
-    }
+  if (!user && !isLoading) {
+    return <Navigate to="/auth/sign-in" replace />;
+  }
 
+  if (!plan) {
+    return <Navigate to="/onboarding" replace />;
+  }
 
-    return 
-
-    <div>Profile page</div>
-
+  return <div>Profile page</div>;
 }

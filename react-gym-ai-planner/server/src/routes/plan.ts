@@ -20,9 +20,33 @@ planRouter.post("/generate", async (req: Request, res: Response) => {
             .json({error: "User profile not found. Complete onboarding first. "})
         }
 
-        
+        const latestPlan = await prisma.training_plans.findFirst({
+            where: {user_id: userId},
+            orderBy: { created_at: "desc"},
+            select: { version:true },
+        })
 
-    }catch (error){
+        const nextVersion = latestPlan ? latestPlan.version + 1 : 1;
+        let planJson;
+
+        const planText = JSON.stringify(planJson, null, 2);
+
+        const newPlan = await prisma.training_plans.create({
+            data: {
+                user_id: userId,
+                plan_json: planJson as any,
+                plan_text: planText,
+                version: nextVersion,
+            },
+        });
+
+        res.json({
+            id: newPlan.id,
+            version: newPlan.version,
+            createdAt: newPlan.created_at,
+        });
+
+    } catch (error){
         console.error("Error generating plan, error");
         res.status(500).jason({erroe: "Failed to generae plan"})
     }

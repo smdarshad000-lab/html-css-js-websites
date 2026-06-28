@@ -19,7 +19,7 @@ model training_plans {
   plan_json  Json
   plan_text  String
   version    Int @default(1)
-
+  created_at DateTime @default(now()) @db.Timestamptz(6)
   @@index([user_id], map: "idx_training_plan_user_id")
 }
 model user_profile {
