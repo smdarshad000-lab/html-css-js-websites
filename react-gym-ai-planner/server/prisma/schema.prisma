@@ -13,6 +13,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model training_plans {
+  id         String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id    String @db.Uuid
+  plan_json  Json
+  plan_text  String
+  version    Int @default(1)
+
+  @@index([user_id], map: "idx_training_plan_user_id")
+}
 model user_profile {
   user_id          String   @id @db.Uuid
   goal             String   @db.VarChar(20)
