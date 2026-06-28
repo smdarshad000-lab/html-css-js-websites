@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import dotenv from "dotenv";
 import { TrainingPlan, UserProfile } from "../../types";
 
-dotenv.config();
+
 
 export async function generateTrainingPlan(
   profile: UserProfile | Record<string, any>,
@@ -18,7 +18,7 @@ export async function generateTrainingPlan(
     preferred_split: profile.preferred_split || "upper_lower",
   };
 
-  const apiKey = process.env.OPEN_ROUTER_KEY;
+  const apiKey = process.env.NVIDIA_KEY;
 
   if (!apiKey) {
     throw new Error("OPEN_ROUTER_KEY is not set in environment variables");
@@ -26,7 +26,7 @@ export async function generateTrainingPlan(
 
   const openai = new OpenAI({
     apiKey,
-    baseURL: "https://openrouter.ai/api/v1",
+    baseURL: "https://integrate.api.nvidia.com/v1",
     defaultHeaders: {
       "HTTP-Referer": process.env.BASE_URL || "http://localhost:3001",
       "X-Title": "GymAI Plan Generator",
@@ -38,7 +38,7 @@ export async function generateTrainingPlan(
 
   try {
     const completion = await openai.chat.completions.create({
-      model: "nvidia/nemotron-3-nano-30b-a3b",
+      model: "mistralai/mistral-medium-3.5-128b",
       messages: [
         {
           role: "system",

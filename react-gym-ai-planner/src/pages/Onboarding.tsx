@@ -110,7 +110,7 @@ export default function Onboarding() {
               <h1 className="text-2xl font-bold mb-2">
                 Tell Us About Yourself
               </h1>
-              <p className="text-[var(--color-muted)] mb-6">
+              <p className="text-(--color-muted) mb-6">
                 Help us create the perfect plan for you.
               </p>
               <form onSubmit={handleQuestionnaire} className="space-y-5">
@@ -180,9 +180,9 @@ export default function Onboarding() {
             </Card>
           ) : (
             <Card variant="bordered" className="text-center py-16">
-              <Loader2 className="w-12 h-12 text-[var(--color-accent)] mx-auto mb-6 animate-spin" />
+              <Loader2 className="w-12 h-12 text-(--color-accent) mx-auto mb-6 animate-spin" />
               <h1 className="text-2xl font-bold mb-2">Creating your Plan</h1>
-              <p className="text-[var(--color-muted)]">
+              <p className="text-(--color-muted)">
                 {" "}
                 Our AI is building your personalized training program...
               </p>
