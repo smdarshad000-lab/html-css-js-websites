@@ -1,16 +1,16 @@
-import { WebSocketServer } from 'ws';
+const { WebSocketServer } = require('ws');
 
-const wss = new WebSocketServer({ port: 8080});
+const wss = new WebSocketServer({ port: 8080 });
  
 wss.on("connection", function(socket){
 
     console.log("users connected")
-    setInterval(() =>{
-        socket.send("Current price of solana is" + Math.radom(());
-    },500)
+   
 
     socket.on("message", (e) => {
-        console.log(e.tostring());
+        if(e.toString() === "ping"){
+            socket.send("pong");
+        }
     })
 
 })
