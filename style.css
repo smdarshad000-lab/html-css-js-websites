@@ -1,0 +1,118 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+/* .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flexbox;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+.taskbar{
+    /* background-color: yellow; */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 60%; */
+}
+#right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#right h4 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+.page1{
+    /* background-color: blue; */
+    font-style: oblique;
+    align-items: flex-start;
+     /* padding: 70px 80px */
+}
+
+.buttons button{
+    background-color: black;
+    color: beige;
+    border-radius: 20px;
+}
+.page1 p{
+    text-align: right;
+    /* justify-content: space-between; */
+    height: 20;
+    margin-left: auto;
+    width: 30%;    
+}
+
+.box{
+    background-color: #f4f4f4;
+    width: 90%;
+    margin: 50px;
+    border-radius: 30px;
+    padding: 25px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#agents{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#bottombar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottombar button{
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    padding: 10px 1%; 
+}
+#signup{
+    background-color: black;
+    color: #f4f4f4;
+    padding: 7px;
+    border-radius: 40px ;
+}
+#circle{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    border-radius: 50%;
+    /* justify-content: center; */
+    /* display: flex; */
+}
+
+.company{
+  width: 700px;
+  height: 450px;
+  border: 2px dashed #333; 
+  background-color: #f9f9f9;
+  margin: 40px auto;
+}
+
+
+
+
