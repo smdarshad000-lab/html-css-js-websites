@@ -1,6 +1,6 @@
 * {
-    margin: 10;
-    padding: 10;
+    margin: 10px;
+    padding: 10px;
     box-sizing: border-box;
 }
 /* .container{
@@ -23,6 +23,8 @@ body {
     align-items: center;
     justify-content: space-between;
     /* padding-left: 60%; */
+    /* position: fixed; */
+    margin-top: 0%;
 }
 #right{
     display: flex;
@@ -101,8 +103,9 @@ img{
     height: 300px;
     background-color: green;
     border-radius: 50%;
-    /* justify-content: center; */
-    /* display: flex; */
+    justify-items: center;
+    display: flex;
+    margin: auto;
 }
 
 .company{
