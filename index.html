@@ -6,75 +6,128 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body class="pt-20">
 
     <div class="max-w-7xl mx-auto px-8">
 
-   <section class="taskbar fixed top-0 left-0 w-full bg-white z-50">
+   <section class="navbar fixed top-0 left-0 w-full bg-white ">
 
-        <div id="left">
+        <div class="ml-40" id="left">
             <p  >11ElevenLabs</p>
         </div>
 
-        <div id="right">
+        <div class="mr-60" id="right">
             <h4>sign Up</h4>
 
-            
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMMsbYHQDYLpzWSASDprlp3GlFZsexkARXeYCAtdlzQ&s=10" alt="">
             
     </div>
+    
       
     </section>
 
-    <div class="max-w-7xl mx-auto px-8 flex justify-between items-center"></div>
+    <!-- <div class="max-w-7xl mx-auto px-8 flex justify-between items-center"></div> -->
 
-        <section class="page1 flex-1/2 ">
-            <h1 class="text-5xl ">Bringing <br> technolohy to life</h1>
+        <section class="page1 flex-1 ">
+             <div class="max-w-7xl mx-auto px-8 flex justify-between items-center"></div>
+            <div class="flex">
+            <h1 class="text-5xl ">Bringing <br> technology to life</h1>
            
-            <p>Powering the best enterprises, creators, and developers.
+            <p class="mr-8 ">Powering the best enterprises, creators, and developers.
              From ElevenAgents for customer experience, ElevenCreative
               for content creation, to the leading AI voice generator.
             </p>
+            </div>
 
             <div class="buttons ">
-                <button class="px-6 py-3">Sign Up</button>
+                <button class="px-6 py-3 ">Sign Up</button>
                 <button class="px-6 py-3">Contact Sales</button>
            </div>
           
         
-            <section class="box">
-                
-                <div id="agents">
-                    <button>ElevenCreative</button>
-                    <button>ElevenAgents</button>
-                    <button>ElevenAPI</button>
-               
-                </div>
-                <div id="circle"></div>
-              
-                <div id="bottombar">
-                    <button>AI Voice Generator</button>
-                    <button>Text to Speech</button>
-                    <button>Music</button>
-                    <button>Speech to Text</button>
-                    <button>Voice Cloning</button>
-                    <button>Dubbing</button>
-                    <button id="signup">sign up</button>
-                </div>
+                <section class="box">
+
+    <div id="agents">
+        <button>ElevenCreative</button>
+        <button>ElevenAgents</button>
+        <button>ElevenAPI</button>
+    </div>
+
+    <div class="swiper w-full">
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide flex justify-center">
+            <div class="w-56 h-56 rounded-full bg-red-300"></div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+            <div class="w-56 h-56 rounded-full bg-green-300"></div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+            <div class="w-56 h-56 rounded-full bg-blue-300"></div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+            <div class="w-56 h-56 rounded-full bg-yellow-300"></div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+            <div class="w-56 h-56 rounded-full bg-pink-300"></div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+            <div class="w-56 h-56 rounded-full bg-purple-300"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="flex justify-center gap-6 mt-6">
+
+    <button class="prev-btn text-2xl">◀</button>
+
+    <button class="next-btn text-2xl">▶</button>
+
+</div>  
+
+    <div id="bottombar">
+        <button>AI Voice Generator</button>
+        <button>Text to Speech</button>
+        <button>Music</button>
+        <button>Speech to Text</button>
+        <button>Voice Cloning</button>
+        <button>Dubbing</button>
+        <button id="signup">Sign Up</button>
+    </div>
+
+</section>       
             </section>
-            
-        </section>
 
+            <div class="w-full mt-10">
 
-        <p>Trusted by leading developers and enterprises</p>
-        <button id="#">read all stories</button>
+    <div class="max-w-7xl mx-auto px-12 flex justify-between items-center">
+
+        <p> Trusted by leading developers and enterprises </p>
+        <button class="bg-black text-white rounded-full px-6 py-2"> Read all stories </button>
+
+    </div>
+
+</div>
 
        <div class="company"></div>
 
        <div class="box1">
         <div id="title1">
-        <h1 class="text-3xl font-bold text-black">Two platforms built on the <br> same research foundation</h1>
+        <h1 class="text-3xl text-black">Two platforms built on the <br> same research foundation</h1>
             </div>
 
            <div class="flex justify-between items-start">
@@ -86,55 +139,67 @@
             Generate ultra-realistic speech, videos, music, and sound effects.
         </p>
 
-        <div class="w-[500px] h-[350px] bg-gray-100 border border-gray-300 rounded-3xl mt-6"></div>
+        
     </div>
 
-    <div class="studio w-[500px]">
-        <h5 class="text-xl font-bold">ElevenStudio</h5>
+    <div class="studio w-[500px] ">
+        <h5 class="text-xl font-bold mr-60">ElevenStudio</h5>
 
         <p class="mt-2">
             Create and manage AI voices with professional tools.
         </p>
 
-        <div class="w-[500px] h-[350px] bg-gray-100 border border-gray-300 rounded-3xl mt-6"></div>
-    </div>
-
 </div>
 
 </div>
+    
+<div class="relative flex items-center justify-center w-full h-[450px] bg-gray-100 rounded-xl overflow-hidden group">
+  <!-- First Image (Base) -->
+  <img 
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-4NOdMLnQWG1wjod-kNGjcUxB72eV2llnQopT1hq6OA&s=10" 
+    alt="First image" 
+    class="absolute left-4 w-full h-full object-fit rounded-lg z-10 shadow-lg transition-all duration-300 group-hover:translate-x-6 group-hover:z-30"
+  />
+  
+  <!-- Second Image (Overlapping half) -->
+  <img 
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT27uIP9oP3_WGccq04Iqq10i-TURHEPivgLR8lAgteww&s=10" 
+    alt="Second image" 
+    class="absolute left-28 w-full h-full object-fit rounded-lg z-20 shadow-xl transition-all duration-300 group-hover:-translate-x-6 group-hover:z-10"
+  />
+</div>
 
-<section class="box2 mt-32">
 
-    <div id="title2" class="text-center">
-       
-    </div>
+<section class="box2 mt-0">
 
-    <div class="topBoxes flex justify-between gap-10 mt-16">
+   
+
+    <div class="topBoxes justify-between gap-10 mt-16">
 
         <div class="leftBox w-[500px]">
-            <h5 class="text-xl font-bold">ElevenCreative</h5>
-
-            <h1 class="mt-2 text-gray-500">
+            <h5 class="text-xl font-medium">ElevenCreative</h5>
+            </div>
+            
+          <div class="flex">
+            <h1 class="mt-2 text-gray-500 font-bold  text-4xl">
               Create, edit, and localize in one AI platform
             </h1>
 
-            <div class="w-[500px] h-[350px] bg-gray-100 rounded-3xl mt-6"></div>
-        </div>
-
-        <div class="rightBox w-[500px]">
-
-            <p class="mt-2 text-gray-500">
+            <p class="mt-2 text-black-500">
                 Create ultra-realistic speech, turn ideas into videos, compose music in any genre, or design immersive sound effects. <br>
                  Craft your next film, ad, campaign, social content, audiobook, or podcast with our creative platform.
 
             </p>
-
-            <div class="w-[500px] h-[350px] bg-gray-100 rounded-3xl mt-6"></div>
-        </div>
-
+            </div>
+            <button class="bg-black text-white rounded-full px-6 py-2 ml-8">learn more</button>
     </div>
 
-    <div class="bottomBoxes flex justify-between mt-10">
+    <div class="flex">
+    <div class="w-[500px] h-[350px] bg-gray-100 rounded-3xl mt-6"></div>
+    <div class="w-[500px] h-[350px] bg-gray-100 rounded-3xl mt-6"></div>
+    </div>
+
+    <div class="bottomBoxes flex justify-between ">
 
         <div class="w-[250px] h-[220px] bg-gray-100 rounded-3xl"></div>
 
@@ -154,7 +219,7 @@
         <div class="w-[70px] h-[40px] bg-gray-100 rounded-lg"></div>
     </div>
 
-     <button class="bg-black text-white px-6 py-3 rounded-full ml-auto hover:bg-gray-500">
+     <button class="bg-black text-white px-6 py-1 rounded-full ml-auto hover:bg-gray-500">
         Get Started
     </button>
 
@@ -165,7 +230,7 @@
 
        <section class="box3 mt-60">
         
-        <h1 class="text-gray-500 text-sm font-bold">ElevenAgents</h1>
+        <h1 class="text-gray-500 text-sm font-bold ml-8">ElevenAgents</h1>
         
             <div class="content flex justify-between">
 
@@ -206,7 +271,7 @@
    <div class="w-[40px] h-[40px] bg-gray-200 rounded-2xl"></div>
 
    <div class="w-[40px] h-[40px] bg-gray-200 rounded-2xl"></div>
-     <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-500 ml-auto">Get Started</button>
+     <button class="bg-black text-white px-2 py-1 rounded-full hover:bg-gray-500 ml-auto">Get Started</button>
 
 </div>
        </section>
@@ -255,19 +320,23 @@
         </h1>
 
         
-        <div class="flex justify-center mt-8">
+       <div class="flex  justify-center">
+  
+  <label class="cursor-pointer">
+    <input type="radio" name="toggle-buttons" class="peer hidden" checked />
+    <span class="block px-6 py-2 rounded-lg font-medium border transition-colors bg-white text-gray-700 border-gray-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600">
+      ElevenCreative
+    </span>
+  </label>
 
-            <div class="flex border rounded-full overflow-hidden">
-
-                <button class="px-8 py-3 ">
-                    ElevenCreative
-                </button>
-
-                <button class="px-8 py-3">
-                    ElevenAgents
-                </button>
-
-            </div>
+  
+  <label class="cursor-pointer">
+    <input type="radio" name="toggle-buttons" class="peer hidden" />
+    <span class="block px-6 py-2 rounded-lg font-medium border transition-colors bg-white text-gray-700 border-gray-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600">
+      ElevenAgents
+    </span>
+  </label>
+</div>
 
         </div>
 
@@ -282,12 +351,7 @@
         <div class="w-[42%] h-[520px] bg-gray-300 rounded-3xl"></div>
 
         
-        <div class="w-[24%] flex flex-col justify-between">
-
-            
-
-           
-            <div class="h-[340px] bg-gray-300 rounded-3xl"></div>
+       <div class="w-[28%] h-[520px] bg-gray-300 rounded-3xl"></div>
 
         </div>
 
@@ -496,5 +560,8 @@
 
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

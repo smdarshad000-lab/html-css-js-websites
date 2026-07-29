@@ -16,7 +16,7 @@ body {
 }
 
 
-.taskbar{
+.navbar{
     /* background-color: yellow; */
     padding: 10px 20px;
     display: flex;
@@ -41,8 +41,8 @@ body {
 }
 
 img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .page1{
@@ -99,13 +99,15 @@ img{
     border-radius: 40px ;
 }
 #circle{
-    width: 300px;
-    height: 300px;
-    background-color: green;
-    border-radius: 50%;
-    justify-items: center;
-    display: flex;
-    margin: auto;
+    width:300px;
+    height:300px;
+    background-color:green;
+    border-radius:50%;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:20px auto;
 }
 
 .company{
@@ -117,5 +119,21 @@ img{
 }
 
 
+.swiper{
+    width:100%;
+    height:100%;
+}
 
+.swiper-wrapper{
+    width:100%;
+    height:100%;
+}
+
+.swiper-slide{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
